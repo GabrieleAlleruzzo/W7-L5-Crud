@@ -20,23 +20,23 @@ const getArray = function () {
       const row = document.getElementById("d-cards");
       data.forEach((game) => {
         row.innerHTML += ` 
-        <div class="col col-12 col-sm-6 col-md-4 col-lg-3> 
-        <div class="card">
-  <img src=" ${game.imageUrl}" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">
+        <div class=" col col-12  col-md-6 col-lg-3 p-0 mb-4"> 
+        <div class="card shadow rounded" >
+  <img src=" ${game.imageUrl}" class="card-img-top" alt="vg img thumbnail" >
+  <div class="card-body p-2" style>
+    <h3 class="card-title text-capitalize mt-1">
     ${game.name}
     </h5>
     <p class="card-text"> 
     ${game.description}
     </p>
-    <p class="card-text"> 
+    <p class="card-text fst-italic fw-medum "> 
     ${game.brand}
     </p>
-    <p class="card-text"> 
+    <p class="card-text text-danger fw-bold"> 
     ${game.price}$
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <a href="#" class="btn btn-danger">Show Details</a>
   </div>
 </div>
         </div>
